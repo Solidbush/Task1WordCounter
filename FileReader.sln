@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileReader", "FileReader.csproj", "{BC69E1F9-760B-4603-9F6E-D80EDB249CDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCounterLib", "WordCounterLib\WordCounterLib.csproj", "{27DF1978-02E2-4787-8AF0-AF1616437865}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC69E1F9-760B-4603-9F6E-D80EDB249CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC69E1F9-760B-4603-9F6E-D80EDB249CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC69E1F9-760B-4603-9F6E-D80EDB249CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC69E1F9-760B-4603-9F6E-D80EDB249CDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27DF1978-02E2-4787-8AF0-AF1616437865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27DF1978-02E2-4787-8AF0-AF1616437865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27DF1978-02E2-4787-8AF0-AF1616437865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27DF1978-02E2-4787-8AF0-AF1616437865}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D9F2B25-FF35-42CF-91FD-D310441B8DFA}
+	EndGlobalSection
+EndGlobal
