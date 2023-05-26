@@ -8,7 +8,7 @@ namespace WordCounterLib
     public class WordCounter
     {
         private static readonly char[] delimiterChars = { ' ', ',', '.', ':', '!', '?', '-', '\t' };
-        private static readonly char newPart = '!';
+        private static readonly char newPart = '\n';
         private static readonly string nullString = "";
         private const int CommonValue = 1;
         private const int Incriment = 1;
@@ -30,34 +30,6 @@ namespace WordCounterLib
                     else
                         wordCountDictionary.Add(wordToLower, CommonValue);
                 }
-            }
-
-            return wordCountDictionary.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
-        }
-
-        public Dictionary<string, int> CountWordsThread(string text)
-        {
-            string[] lines = text.Split(newPart);
-            foreach (string line in lines)
-            {
-                new Thread(() =>
-                {
-                    System.Action action = () =>
-                    {
-                        string[] words = line.Split(delimiterChars);
-                        foreach (string word in words)
-                        {
-                            var wordToLower = word.ToLower().Trim();
-                            if (wordToLower == nullString)
-                                continue;
-                            if (wordCountDictionary.ContainsKey(wordToLower))
-                                wordCountDictionary[wordToLower] += Incriment;
-                            else
-                                wordCountDictionary.Add(wordToLower, CommonValue);
-                        }
-                    };
-
-                }).Start();
             }
 
             return wordCountDictionary.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
